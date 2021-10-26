@@ -9,5 +9,5 @@ self.vectorizer = TfidfVectorizer()
 model = NLPModel()
 
 #get data
-with open('lib/data/train.tsv') as f:
+with open('restapi/malware_dataset.csv') as f:
     data = pd.read_csv(f, sep='\t')
