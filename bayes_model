@@ -1,0 +1,13 @@
+from model import NLPModel
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
+#creating model object
+self.clf = MultinomialNB()
+self.vectorizer = TfidfVectorizer()
+
+model = NLPModel()
+
+#get data
+with open('lib/data/train.tsv') as f:
+    data = pd.read_csv(f, sep='\t')
